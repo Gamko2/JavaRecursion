@@ -7,7 +7,7 @@ public class Main {
 		int zahly = 0;
 		boolean running = true;
 		while (running) {
-			System.out.println("Please enter x");
+			System.out.println("Please enter x: ");
 
 			Scanner x = new Scanner(System.in);
 			String input = x.next();
@@ -20,7 +20,7 @@ public class Main {
 				System.out.println("Failure! wrong input value");
 				continue;
 			}
-			System.out.println("Please enter y");
+			System.out.println("Please enter y: ");
 			String input2 = x.next();
 			try {
 				zahly = Integer.parseInt(input2);
@@ -29,7 +29,7 @@ public class Main {
 
 			}
 			float result = recursion(zahlx, zahly);
-			System.out.println(result);
+			System.out.println("Result: " +result);
 
 		}
 	}
